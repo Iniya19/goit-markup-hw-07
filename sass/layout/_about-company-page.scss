@@ -1,9 +1,8 @@
 .about-company__list {
     display: flex;
-
-&__item:not(:last-child) {
-    margin-right: 30px;
 }
+.about-company__item:not(:last-child) {
+    margin-right: 30px;
 }
 .about-company__icon {
     width: 70px;

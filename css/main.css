@@ -548,7 +548,7 @@ a {
   display: flex;
 }
 
-.about-company__list__item:not(:last-child) {
+.about-company__item:not(:last-child) {
   margin-right: 30px;
 }
 
