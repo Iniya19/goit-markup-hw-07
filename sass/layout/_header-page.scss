@@ -1,28 +1,9 @@
-header {
+.header {
     border-bottom: 1px solid $border-color;
 }
 .header-main {
     display: flex;
     align-items:center;
-}
-.logo {
-    display: block;
-    margin-right: 93px;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-.logo__top {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.logo__web {
-    color: $title-first-color;
-}
-.logo__studio {
-    color: $title-second-color;
 }
 .site-nav {
     display: flex;
