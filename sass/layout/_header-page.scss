@@ -1,55 +1,58 @@
 .header {
-    border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 .header-main {
-    display: flex;
-    align-items:center;
+  display: flex;
+  align-items: center;
 }
 .site-nav {
-    display: flex;
+  display: flex;
 }
 .site-nav__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1,14;
-    letter-spacing: 0.02em; 
-    list-style-type: none;   
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
 
-&:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 50px;
-}}
+  }
+}
 .header-contacts {
-    display: flex;
-    margin-left: auto; 
+  display: flex;
+  margin-left: auto;
 }
 .header-contacts__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
-    list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
 
-&:last-child {
+  &:last-child {
     margin-left: 50px;
-}}
-.site-nav__link, 
+  }
+}
+.site-nav__link,
 .site-nav__link--current {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $first-color;
-    transition: color $animation-duration $animation-timing-function;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $first-color;
+  transition: color $animation-duration $animation-timing-function;
 
-&:hover,
-&:focus {
-    color: $title-first-color;  
-}}
-.site-nav__link--current {
-    position: relative;
+  &:hover,
+  &:focus {
     color: $title-first-color;
+  }
+}
+.site-nav__link--current {
+  position: relative;
+  color: $title-first-color;
 
-&::after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     display: block;
     left: 0;
@@ -58,38 +61,42 @@
     width: 100%;
     background-color: $title-first-color;
     border-radius: 2px;
-}}
+  }
+}
 .header-contacts__link {
-    display: flex; 
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $second-color;
-    transition: color $animation-duration $animation-timing-function;   
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $second-color;
+  transition: color $animation-duration $animation-timing-function;
 
-&:hover,
-&:focus {
-    color: $title-first-color;  
-}}
+  &:hover,
+  &:focus {
+    color: $title-first-color;
+  }
+}
 .header-contacts__icon--mail {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 16px;
-    height: 12px;
-    transition: fill $animation-duration $animation-timing-function;
+  margin-right: 10px;
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  transition: fill $animation-duration $animation-timing-function;
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     fill: currentColor;
-}}
+  }
+}
 .header-contacts__icon--phone {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 10px;
-    height: 16px;
-    transition: fill $animation-duration $animation-timing-function;
+  margin-right: 10px;
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  transition: fill $animation-duration $animation-timing-function;
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     fill: currentColor;
-}}
+  }
+}

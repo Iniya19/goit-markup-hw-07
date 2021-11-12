@@ -1,36 +1,37 @@
 .our-cusromers__title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $first-color;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $first-color;
 }
 .our-cusromers__list {
-    display: flex;
+  display: flex;
 }
 .our-cusromers__items:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .our-cusromers__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    fill: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: fill $animation-timing-function $animation-duration,
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill $animation-timing-function $animation-duration,
     border $animation-timing-function $animation-duration;
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     fill: $title-first-color;
     border: 1px solid $title-first-color;
-}}
+  }
+}
 .our-cusromers__icons {
-    width: 106px;
-    height: 60px; 
+  width: 106px;
+  height: 60px;
 }
