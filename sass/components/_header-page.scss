@@ -33,10 +33,10 @@ header {
     line-height: 1,14;
     letter-spacing: 0.02em; 
     list-style-type: none;   
-}
-.site-nav__item:not(:last-child) {
+
+&:not(:last-child) {
     margin-right: 50px;
-}
+}}
 .header-contacts {
     display: flex;
     margin-left: auto; 
@@ -47,10 +47,10 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em; 
     list-style-type: none;
-}
-.header-contacts__item:last-child {
+
+&:last-child {
     margin-left: 50px;
-}
+}}
 .site-nav__link, 
 .site-nav__link--current {
     display: block;
@@ -58,16 +58,16 @@ header {
     padding-bottom: 32px;
     color: $first-color;
     transition: color $animation-duration $animation-timing-function;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
+
+&:hover,
+&:focus {
     color: $title-first-color;  
-}
+}}
 .site-nav__link--current {
     position: relative;
     color: $title-first-color;
-}
-.site-nav__link--current::after {
+
+&::after {
     content: '';
     position: absolute;
     display: block;
@@ -77,7 +77,7 @@ header {
     width: 100%;
     background-color: $title-first-color;
     border-radius: 2px;
-}
+}}
 .header-contacts__link {
     display: flex; 
     align-items: center;
@@ -85,30 +85,30 @@ header {
     padding-bottom: 32px;
     color: $second-color;
     transition: color $animation-duration $animation-timing-function;   
-}
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+
+&:hover,
+&:focus {
     color: $title-first-color;  
-}
+}}
 .header-contacts__icon--mail {
     margin-right: 10px;
     fill: currentColor;
     width: 16px;
     height: 12px;
     transition: fill $animation-duration $animation-timing-function;
-}
-.header-contacts__icon--mail:hover,
-.header-contacts__icon--mail:focus {
+
+&:hover,
+&:focus {
     fill: currentColor;
-}
+}}
 .header-contacts__icon--phone {
     margin-right: 10px;
     fill: currentColor;
     width: 10px;
     height: 16px;
     transition: fill $animation-duration $animation-timing-function;
-}
-.header-contacts__icon--phone:hover,
-.header-contacts__icon--phone:focus {
+
+&:hover,
+&:focus {
     fill: currentColor;
-}
+}}

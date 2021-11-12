@@ -22,10 +22,10 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-.our-team__item:not(:last-child){
+
+&:not(:last-child){
     margin-right: 30px;
-} 
+}}
 .team-box__title {
     margin-bottom: 10px;
     font-weight: 500;
@@ -49,10 +49,10 @@
 }
 .icons-holder__list {
     margin-right: 10px;
-}
-.icons-holder__list:not(:last-child) {
+
+&:not(:last-child) {
     margin-right: 10px;
-}
+}}
 .icons-holder__icon {
     width: 20px;
     height: 20px;
@@ -67,9 +67,9 @@
     fill: #AFB1B8;
     transition: fill $animation-timing-function $animation-duration,
     background-color $animation-timing-function $animation-duration;
-}
-.icons-holder__link:hover,
-.icons-holder__link:focus {
+
+&:hover,
+&:focus {
     fill: $buttom-text-color;
     background-color: $title-first-color;
-}
+}}

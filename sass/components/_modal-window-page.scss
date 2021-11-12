@@ -90,11 +90,11 @@
     resize: none;
     transition: border $animation-timing-function $animation-duration, 
     color $animation-timing-function $animation-duration;
-}
-.modal-form__comment:focus {
+
+&:focus {
     outline: none;
     border: 1px solid $title-first-color;
-}
+}}
 .modal-form__comment::placeholder {
     font-size: 12px;
     line-height: 1.14;
@@ -162,10 +162,10 @@
     background: $buttom-text-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill $animation-timing-function $animation-duration;
-}
-.modal-form__button--close:hover {
+
+&:hover {
     fill: $title-first-color;
-}
+}}
 .modal-form__icon--close {
     width: 18px;
     height: 18px;
