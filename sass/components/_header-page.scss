@@ -1,0 +1,114 @@
+header {
+    border-bottom: 1px solid $border-color;
+}
+.header-main {
+    display: flex;
+    align-items:center;
+}
+.logo {
+    display: block;
+    margin-right: 93px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo__top {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.logo__web {
+    color: $title-first-color;
+}
+.logo__studio {
+    color: $title-second-color;
+}
+.site-nav {
+    display: flex;
+}
+.site-nav__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em; 
+    list-style-type: none;   
+}
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-contacts {
+    display: flex;
+    margin-left: auto; 
+}
+.header-contacts__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    list-style-type: none;
+}
+.header-contacts__item:last-child {
+    margin-left: 50px;
+}
+.site-nav__link, 
+.site-nav__link--current {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $first-color;
+    transition: color $animation-duration $animation-timing-function;
+}
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: $title-first-color;  
+}
+.site-nav__link--current {
+    position: relative;
+    color: $title-first-color;
+}
+.site-nav__link--current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $title-first-color;
+    border-radius: 2px;
+}
+.header-contacts__link {
+    display: flex; 
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $second-color;
+    transition: color $animation-duration $animation-timing-function;   
+}
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+    color: $title-first-color;  
+}
+.header-contacts__icon--mail {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+    transition: fill $animation-duration $animation-timing-function;
+}
+.header-contacts__icon--mail:hover,
+.header-contacts__icon--mail:focus {
+    fill: currentColor;
+}
+.header-contacts__icon--phone {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+    transition: fill $animation-duration $animation-timing-function;
+}
+.header-contacts__icon--phone:hover,
+.header-contacts__icon--phone:focus {
+    fill: currentColor;
+}
