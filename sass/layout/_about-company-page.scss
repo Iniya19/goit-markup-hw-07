@@ -1,8 +1,10 @@
-.about-company__list {
+.about-company {
   display: flex;
 }
-.about-company__item:not(:last-child) {
-  margin-right: 30px;
+.about-company__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .about-company__icon {
   width: 70px;

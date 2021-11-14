@@ -13,10 +13,9 @@
 }
 .adress {
   font-style: normal;
-
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+}
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress__map {
   font-size: 14px;
@@ -108,4 +107,16 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 29px;
+}
+.footer-form__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $buttom-text-color;
 }

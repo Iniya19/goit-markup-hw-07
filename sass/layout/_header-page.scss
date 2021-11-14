@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid $border-color;
 }
-.header-main {
+.container__header {
   display: flex;
   align-items: center;
 }
@@ -9,33 +9,17 @@
   display: flex;
 }
 .site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.site-nav__link,
+.site-nav__link-current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
   list-style-type: none;
-
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-}
-.header-contacts__item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  list-style-type: none;
-
-  &:last-child {
-    margin-left: 50px;
-  }
-}
-.site-nav__link,
-.site-nav__link--current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -47,12 +31,13 @@
     color: $title-first-color;
   }
 }
-.site-nav__link--current {
+
+.site-nav__link-current {
   position: relative;
   color: $title-first-color;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     left: 0;
@@ -63,7 +48,22 @@
     border-radius: 2px;
   }
 }
-.header-contacts__link {
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -76,23 +76,9 @@
     color: $title-first-color;
   }
 }
-.header-contacts__icon--mail {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
-  transition: fill $animation-duration $animation-timing-function;
-
-  &:hover,
-  &:focus {
-    fill: currentColor;
-  }
-}
-.header-contacts__icon--phone {
-  margin-right: 10px;
-  fill: currentColor;
-  width: 10px;
-  height: 16px;
   transition: fill $animation-duration $animation-timing-function;
 
   &:hover,
